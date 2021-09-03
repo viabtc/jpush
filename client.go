@@ -18,7 +18,7 @@ type JpushClient struct {
 
 func NewJpushClient(appKey, appSecret string) *JpushClient {
 	return &JpushClient{
-		host:      "https://api.jpush.cn/v3",
+		host:      "https://device.jpush.cn/v3",
 		appKey:    appKey,
 		appSecret: appSecret,
 		Session: grequests.NewSession(&grequests.RequestOptions{

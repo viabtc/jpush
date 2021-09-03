@@ -7,6 +7,7 @@
 * Push API v3
 * Schedule API v3
 * Device API v3
+>  base url 修改为device，其他的api将404 https://device.jpush.cn
 
 
 ### 安装
