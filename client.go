@@ -143,9 +143,9 @@ type TagSet struct {
 // 一次 add/remove tag 的上限均为 100 个，且总长度均不能超过 1000 字节。
 // 可以多次调用 API 设置，一个注册 id tag 上限为1000个，应用 tag 总数没有限制
 type DeviceUpdateSet struct {
-	Tags   interface{} `json:"tags,omitempty"`
-	Alias  string      `json:"alias,omitempty"`
-	Mobile string      `json:"mobile,omitempty"`
+	Tags   string `json:"tags"`
+	Alias  string `json:"alias"`
+	Mobile string `json:"mobile"`
 }
 
 // 设置设备的别名与标签
